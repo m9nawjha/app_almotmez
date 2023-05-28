@@ -1,7 +1,59 @@
 
-$('#autofill-table').DataTable( {
-    autoFill: true
+$('#autofill-table_client_name').DataTable( {
+    keys: false,
+    lengthChange: false,
+    autoFill: false,
+    "info": false,
+    paginate: false,
 } );
+
+$('#autofill-table_client_tel').DataTable( {
+    keys: false,
+    lengthChange: false,
+    autoFill: false,
+    "info": false,
+    paginate: false,
+} );
+$('#autofill-table_client_no').DataTable( {
+    keys: false,
+    lengthChange: false,
+    autoFill: false,
+    "info": false,
+    paginate: false,
+} );
+$('#autofill-table_horse_no').DataTable( {
+    keys: false,
+    lengthChange: false,
+    autoFill: false,
+    "info": false,
+    paginate: false,
+} );
+$('#autofill-table_chlint_access').DataTable( {
+    keys: false,
+    lengthChange: false,
+    autoFill: false,
+    "info": false,
+    paginate: false,
+} );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 $('#hor-autofill').DataTable( {
     autoFill: {
@@ -32,8 +84,8 @@ $('#enable-autofill').DataTable( {
 } );
 
 $('#key-table').DataTable( {
-    keys: true,
-    autoFill: true
+    keys: false,
+    autoFill: false
 } );
 
 //______Select2 

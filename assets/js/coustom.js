@@ -72,5 +72,71 @@ $(document).ready(function () {
             }
           }
         });
-$('#select-clients-pos')
+});
+
+$(document).ready(function () {
+  
+/**اختيار عميل مدرج في النظام**/
+$('#client_name').hide();
+$('#client_tel').hide();
+$('#client_no').hide();
+$('#horse_no').hide();
+$('#chlint_access').hide();
+
+$('#select-clients-pos').change(function() {
+  if ($(this).val() === '0') {
+    $('#client_name').hide();
+    $('#client_tel').hide();
+    $('#client_no').hide();
+    $('#horse_no').hide();
+    $('#chlint_access').hide();
+  };
+});
+$('#select-clients-pos').change(function() {
+  if ($(this).val() === '1') {
+    $('#client_name').show();
+    $('#client_tel').hide();
+    $('#client_no').hide();
+    $('#horse_no').hide();
+    $('#chlint_access').hide();
+  };
+});
+$('#select-clients-pos').change(function() {
+  if ($(this).val() === '2') {
+    $('#client_name').hide();
+    $('#client_tel').show();
+    $('#client_no').hide();
+    $('#horse_no').hide();
+    $('#chlint_access').hide();
+  };
+});
+$('#select-clients-pos').change(function() {
+  if ($(this).val() === '3') {
+    $('#client_name').hide();
+    $('#client_tel').hide();
+    $('#client_no').show();
+    $('#horse_no').hide();
+    $('#chlint_access').hide();
+  };
+});
+$('#select-clients-pos').change(function() {
+  if ($(this).val() === '4') {
+    $('#client_name').hide();
+    $('#client_tel').hide();
+    $('#client_no').hide();
+    $('#horse_no').show();
+    $('#chlint_access').hide();
+  };
+});
+$('#select-clients-pos').change(function() {
+  if ($(this).val() === '5') {
+    $('#client_name').hide();
+    $('#client_tel').hide();
+    $('#client_no').hide();
+    $('#horse_no').hide();
+    $('#chlint_access').show();
+  };
+});
+
+
 });

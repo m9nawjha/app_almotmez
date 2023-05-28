@@ -186,3 +186,12 @@ a,a:hover{
 .tabs-menu1 ul li a {
     color: var(--bs-white);
 }
+
+.dataTables_filter {
+    width: 50%;
+    float: right;
+    text-align: right;
+ }
+.rtl div.table-responsive>div.dataTables_wrapper>div.row:first-child>div[class^=col-]:first-child {
+    display: none;
+}
