@@ -77,21 +77,12 @@ $(document).ready(function () {
 $(document).ready(function () {
   
 /**اختيار عميل مدرج في النظام**/
-$('#client_name').hide();
+$('#client_name').show();
 $('#client_tel').hide();
 $('#client_no').hide();
 $('#horse_no').hide();
 $('#chlint_access').hide();
 
-$('#select-clients-pos').change(function() {
-  if ($(this).val() === '0') {
-    $('#client_name').hide();
-    $('#client_tel').hide();
-    $('#client_no').hide();
-    $('#horse_no').hide();
-    $('#chlint_access').hide();
-  };
-});
 $('#select-clients-pos').change(function() {
   if ($(this).val() === '1') {
     $('#client_name').show();
@@ -135,6 +126,38 @@ $('#select-clients-pos').change(function() {
     $('#client_no').hide();
     $('#horse_no').hide();
     $('#chlint_access').show();
+  };
+});
+
+
+
+
+/** */
+$('#discounts-list').show();
+$('#discounts-perc').hide();
+$('#discounts-SAR').hide();
+
+$('#select-discounts').change(function() {
+  if ($(this).val() === '1') {
+    $('#discounts-list').show();
+    $('#discounts-perc').hide();
+    $('#discounts-SAR').hide();
+  };
+});
+
+$('#select-discounts').change(function() {
+  if ($(this).val() === '2') {
+    $('#discounts-list').hide();
+    $('#discounts-perc').show();
+    $('#discounts-SAR').hide();
+  };
+});
+
+$('#select-discounts').change(function() {
+  if ($(this).val() === '3') {
+    $('#discounts-list').hide();
+    $('#discounts-perc').hide();
+    $('#discounts-SAR').show();
   };
 });
 
