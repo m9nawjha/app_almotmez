@@ -1,3 +1,18 @@
+/***********************************/
+/*
+برنامج المتميز المحوسب لخدمات الخيول
+By :: Mohamed Alnawjha
+Github :: https://github.com/m9nawjha
+02  /  06  /   2023
+v 1.1
+*/
+/***********************************/
+
+/***********************************/
+/*
+general style css
+*/
+/***********************************/
 :root{
     --bs-primary: #0A1931;
     --bs-info: #0069a5;
@@ -103,8 +118,6 @@
 .border-blue {
     border-color: var(--bs-primary) !important;
 }
-
-/* body */
 body{
     -moz-transition: all 250ms linear;
     -webkit-transition: all 250ms linear;
@@ -139,12 +152,26 @@ a,a:hover{
 .form-control:focus::placeholder ,.form-select:focus::placeholder{
     color: var(--bs-info);
 }
-
-.app-sidebar__toggle:before {
-    display: none !important;
-}
+/***********************************/
+/*
+haeder style css
+*/
+/***********************************/
 .header-right-icons .nav-link.icon , .header-right-icons .nav-link.icon:hover{
     color: var(--bs-info) !important;
+}
+.app-sidebar__toggle:before {
+    content: "\F5C9" !important;
+    font-family: bootstrap-icons!important;
+    margin-bottom: 10px;
+}
+/***********************************/
+/*
+sidemenu style css
+*/
+/***********************************/
+.sidebar-mini .side-menu {
+    margin-top: 20px !important;
 }
 .side-menu__item{
     color: var(--bs-primary);
@@ -162,9 +189,22 @@ a,a:hover{
     color: var(--bs-info) !important;
 }
 .rtl .slide-menu li .slide-item:before {
-    display: none;
+    content: "\F309" !important;
+    font-family: bootstrap-icons!important;
+    font-size: 20px;
+    color: var(--bs-info);
 }
 
+@media (max-width: 767px) {
+    .sidebar-mini .side-menu {
+        margin-top: 30px !important;
+    }
+}
+/***********************************/
+/*
+content style css
+*/
+/***********************************/
 .page-title{
     color: var(--bs-info);
 }
@@ -174,6 +214,9 @@ a,a:hover{
 }
 .breadcrumb-item a:hover{
     color: var(--bs-info);
+}
+.breadcrumb-item+.breadcrumb-item::before{
+    color: var(--bs-blue);
 }
 .nav.product-sale {
     top: -55px !important;
@@ -192,9 +235,8 @@ a,a:hover{
     float: right;
     text-align: right;
  }
- .custom-tooltip {
-    --bs-tooltip-bg: var(--bs-primary);
-  }
-.rtl div.table-responsive>div.dataTables_wrapper>div.row:first-child>div[class^=col-]:first-child {
-    display: none;
+@media (max-width: 767px) {
+    .page-title{
+        font-size: 17px;
+    }
 }

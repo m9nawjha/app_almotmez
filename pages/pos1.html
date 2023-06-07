@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>برنامج إدارة المختبر - اسطبل المتميز - نقاط البيع</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon.ico" />
+    <!-- /favicon -->
+
+    <!-- css -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <link href="../assets/css/style.css" rel="stylesheet" />
+    <link href="../assets/css/transparent-style.css" rel="stylesheet">
+    <link href="../assets/css/skin-modes.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <!-- /css -->
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
+    <!-- /font -->
+
+    <!--- font-icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel = "stylesheet" href = "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
+    <!--- /font-icons -->
+
+</head>
+<body dir="rtl" class="app sidebar-mini rtl light-mode">
+
+    <!-- page -->
+    <div class="page">
+        <div class="page-main">
+
+            <!-- app-Header -->
+            <div class="app-header header sticky shadow-sm">
+                <div class="container-fluid main-container">
+                    <div class="d-flex">
+                        <a aria-label="Hide Sidebar" class="app-sidebar__toggle text-info link-hover mt-3" data-bs-toggle="sidebar" href="javascript:void(0)"><i class="bi bi-text-right"></i></a>
+                        <a class="logo-horizontal d-flex d-md-none" href="index.html">
+                            <img src="../assets/images/logo.png" class="header-brand-img rounded-circle mx-8" style="height: 50px !important;" alt="logo">
+                        </a>
+                        <div class="main-header-center ms-3 d-none d-lg-block">
+                            <input type="text" class="form-control" id="typehead" placeholder="كلمة البحث هنا">
+                            <button class="btn px-0 pt-2"><i class="bi bi-search"></i></button>
+                        </div>
+                        <div class="d-flex order-lg-2 ms-auto header-right-icons">
+                            <!-- SEARCH -->
+                            <button class="navbar-toggler navresponsive-toggler text-info d-lg-none ms-auto" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent-4"
+                                aria-controls="navbarSupportedContent-4" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon bi bi-three-dots-vertical"></span>
+                            </button>
+                            <div class="navbar navbar-collapse responsive-navbar p-0">
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+                                    <div class="d-flex order-lg-2">
+                                        <div class="dropdown d-lg-none d-flex">
+                                            <a href="javascript:void(0)" class="nav-link icon" data-bs-toggle="dropdown">
+                                                <i class="bi bi-search"></i>
+                                            </a>
+                                            <div class="dropdown-menu header-search dropdown-menu-start">
+                                                <div class="input-group w-100 p-2">
+                                                    <input type="text" class="form-control" placeholder="البحث....">
+                                                    <div class="input-group-text btn btn-info">
+                                                        <i class="bi bi-search"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- MESSAGE -->
+                                        <div class="dropdown  d-flex message">
+                                            <a class="nav-link icon link-hover" data-bs-toggle="dropdown">
+                                                <i class="bi bi-chat-square-dots fs-4"></i><span class="spinner-grow text-green position-absolute top-0 translate-middle" style="left: 80%; width: 10px; height: 10px;" role="status">
+                                                    <span class="visually-hidden">3</span>
+                                                  </span>                                            
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow shadow-sm">
+                                                <div class="drop-heading border-bottom">
+                                                    <div class="d-flex">
+                                                        <h6 class="mt-1 mb-0 fs-16 fw-semibold text-info">4 رسائل جديدة</h6>
+                                                        <div class="ms-auto">
+                                                            <a href="javascript:void(0)" class="text-muted p-0 fs-12">تحديد الكل مقروء</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="message-menu message-menu-scroll">
+                                                    <a class="dropdown-item d-flex" href="#">
+                                                        <span class="avatar avatar-md brround me-3 align-self-center cover-image">
+                                                            <img src="../assets/images/logo.png" alt="img" class="avatar profile-user brround cover-image">
+                                                        </span>                                                        <div class="wd-90p">
+                                                            <div class="d-flex">
+                                                                <h5 class="mb-1 text-info">محمد محمد</h5>
+                                                                <small class="text-muted ms-auto text-end">
+                                                                    6:45 am
+                                                                </small>
+                                                            </div>
+                                                            <span class="text-primary">نص الرسالة هنا....</span>
+                                                        </div>
+                                                    </a>
+                                                    <a class="dropdown-item d-flex" href="#">
+                                                        <span class="avatar avatar-md brround me-3 align-self-center cover-image">
+                                                            <img src="../assets/images/logo.png" alt="img" class="avatar profile-user brround cover-image">
+                                                        </span>                                                        <div class="wd-90p">
+                                                            <div class="d-flex">
+                                                                <h5 class="mb-1 text-info">محمد محمد</h5>
+                                                                <small class="text-muted ms-auto text-end">
+                                                                    6:45 am
+                                                                </small>
+                                                            </div>
+                                                            <span class="text-primary">نص الرسالة هنا....</span>
+                                                        </div>
+                                                    </a>
+                                                    <a class="dropdown-item d-flex" href="#">
+                                                        <span class="avatar avatar-md brround me-3 align-self-center cover-image">
+                                                            <img src="../assets/images/logo.png" alt="img" class="avatar profile-user brround cover-image">
+                                                        </span>                                                        <div class="wd-90p">
+                                                            <div class="d-flex">
+                                                                <h5 class="mb-1 text-info">محمد محمد</h5>
+                                                                <small class="text-muted ms-auto text-end">
+                                                                    6:45 am
+                                                                </small>
+                                                            </div>
+                                                            <span class="text-primary">نص الرسالة هنا....</span>
+                                                        </div>
+                                                    </a>
+                                                    <a class="dropdown-item d-flex" href="#">
+                                                        <span class="avatar avatar-md brround me-3 align-self-center cover-image">
+                                                            <img src="../assets/images/logo.png" alt="img" class="avatar profile-user brround cover-image">
+                                                        </span>                                                        <div class="wd-90p">
+                                                            <div class="d-flex">
+                                                                <h5 class="mb-1 text-info">محمد محمد</h5>
+                                                                <small class="text-muted ms-auto text-end">
+                                                                    6:45 am
+                                                                </small>
+                                                            </div>
+                                                            <span class="text-primary">نص الرسالة هنا....</span>
+                                                        </div>
+                                                    </a>
+
+
+                                                </div>
+                                                <div class="dropdown-divider m-0"></div>
+                                                <a href="javascript:void(0)" class="dropdown-item text-center p-3 text-info">مشاهدة جميع الرسائل </a>
+                                            </div>
+                                        </div>
+                                        <!-- /MESSAGE -->
+
+                                        <!-- NOTIFICATIONS -->
+                                        <div class="dropdown  d-flex notifications">
+                                            <a class="nav-link icon link-hover" data-bs-toggle="dropdown">
+                                                <i class="bi bi-bell fs-4"></i><span class="spinner-grow text-danger position-absolute top-0 translate-middle" style="left: 70%; width: 10px; height: 10px;" role="status">
+                                                    <span class="visually-hidden">3</span>
+                                                  </span>                                            
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow shadow-sm">
+                                                <div class="drop-heading border-bottom">
+                                                    <div class="d-flex">
+                                                        <h6 class="mt-1 mb-0 fs-16 fw-semibold text-info">الإشعارات
+                                                        </h6>
+                                                    </div>
+                                                </div>
+                                                <div class="notifications-menu notifications-menu-scroll">
+                                                    <a class="dropdown-item d-flex" href="notify-list.html">
+                                                        <div class="me-3 notifyimg  bg-success brround box-shadow-success">
+                                                            <i class="bi bi-binoculars-fill fs-5"></i>
+                                                        </div>
+                                                        <div class="mt-1 wd-80p">
+                                                            <h5 class="notification-label text-info mb-1"><span class="text-blue fs-5">4</span> عينات جديدة
+                                                            </h5>
+                                                            <span class="notification-subtext">قبل 30 دقيقة</span>
+                                                        </div>
+                                                    </a>
+                                                    <a class="dropdown-item d-flex" href="notify-list.html">
+                                                        <div class="me-3 notifyimg  bg-secondary brround box-shadow-secondary">
+                                                            <i class="bi bi-check-circle fs-4"></i>
+                                                        </div>
+                                                        <div class="mt-1 wd-80p">
+                                                            <h5 class="notification-label text-info mb-1"><span class="text-blue fs-5">3</span> نتائج معتمدة
+                                                            </h5>
+                                                            <span class="notification-subtext">قبل 30 دقيقة</span>
+                                                        </div>
+                                                    </a>
+                                                    <a class="dropdown-item d-flex" href="notify-list.html">
+                                                        <div class="me-3 notifyimg  bg-pink brround box-shadow-pink">
+                                                            <i class="bi bi-person-fill-gear fs-4"></i>
+                                                        </div>
+                                                        <div class="mt-1 wd-80p">
+                                                            <h5 class="notification-label text-info mb-1"><span class="text-blue fs-5">2</span> تذاكر الدعم الفني
+                                                            </h5>
+                                                            <span class="notification-subtext">قبل 30 دقيقة</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="dropdown-divider m-0"></div>
+                                                <a href="notify-list.html"
+                                                    class="dropdown-item text-center p-3 text-info">مشاهدة جميع الاشعارات</a>
+                                            </div>
+                                        </div>
+                                        <!-- /NOTIFICATIONS -->
+
+                                        
+                                        <div class="dropdown d-flex profile-1">
+                                            <a href="javascript:void(0)" data-bs-toggle="dropdown" class="nav-link  leading-none d-flex">
+                                                <span class="avatar brround cover-image mx-4" data-bs-image-src="../assets/images/logo.png" style="background: url(&quot;../assets/images/logo.png&quot;) center center;"> <span class="avatar-status bg-green"></span> </span>
+                                                <div class="d-block">
+                                                    <h5 class="text-info me-2 mb-0 fs-6 fw-bold"> محمد أبو سراج </h5>
+                                                    <h5 class="text-muted mb-0 fs-13 fw-semibold">المشرف</h5>    
+                                                </div>
+                                                <i class="bi bi-chevron-down fs-6 text-info me-4"></i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                                                <div class="drop-heading">
+                                                    <div class="text-center">
+                                                        <h5 class="text-info mb-0 fs-14 fw-semibold">محمد أبو سراج</h5>
+                                                        <h5 class="text-primary mb-0 fs-13 fw-semibold">المشرف</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="dropdown-divider m-0"></div>
+                                                <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#profilemodal">
+                                                    <i class="dropdown-icon fs-4 las la-user-cog"></i> تعديل حسابي
+                                                </a>
+                                                <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#passmodal">
+                                                    <i class="dropdown-icon fs-4 bi bi-file-lock"></i> تغيير كلمة المرور
+                                                </a>
+                                                <a class="dropdown-item" href="login.html">
+                                                    <i class="dropdown-icon fs-4 las la-sign-out-alt"></i> تسجيل الخروج
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /app-Header -->
+
+            <!--app-sidebar-->
+            <div class="sticky shadow-sm">
+                <div class="app-sidebar__overlay" data-bs-toggle="sidebar"></div>
+                <div class="app-sidebar">
+                    <div class="side-header border-bottom-0">
+                        <a class="header-brand1" href="index.html">
+                            <img src="../assets/images/logo.png" class="header-brand-img light-logo" style="height: 70px; width: 70px; border-radius: 50%;" alt="logo">
+                            <img src="../assets/images/logo.png" class="header-brand-img mt-1 light-logo1"  style="height: 70px; width: 70px; border-radius: 50%;" alt="logo">
+                        </a>
+                        <!-- LOGO -->
+                    </div>
+                    <div class="main-sidemenu">
+                        <div class="slide-left disabled" id="slide-left"><svg xmlns="http://www.w3.org/2000/svg"
+                                fill="#7b8191" width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z" />
+                            </svg></div>
+                        <ul class="side-menu" id="side-menu-ul">
+                            <li class="slide">
+                                <a class="side-menu__item has-link active" data-bs-toggle="slide" href="pages/index.html"><i
+                                        class="side-menu__icon bi bi-house-fill"></i><span
+                                        class="side-menu__label">الرئيسية</span></a>
+                            </li>
+                            <li class="slide">
+                                <a class="side-menu__item has-link" data-bs-toggle="slide" href="pages/إدارة_العملاء.html"><i
+                                        class="side-menu__icon bi bi-grid-fill"></i><span
+                                        class="side-menu__label">نقاط البيع</span></a>
+                            </li>
+                            <li class="slide">
+                                <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i
+                                        class="side-menu__icon bi bi-people-fill"></i><span
+                                        class="side-menu__label">العملاء</span><i
+                                        class="angle fs-6 fw-bold bi bi-chevron-left"></i></a>
+                                <ul class="slide-menu">
+                                    <li class="side-menu-label1"><a href="javascript:void(0)">العملاء</a></li>
+                                    <li><a href="#" class="slide-item">ملاك اسطبلات</a></li>
+                                    <li><a href="#" class="slide-item">مدربين</a></li>
+                                    <li><a href="#" class="slide-item">عملاء أفراد</a></li>
+                                    <li><a href="#" class="slide-item">عملاء إيواء</a></li>
+                                </ul>
+                            </li>
+                            <li class="slide">
+                                <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i
+                                        class="side-menu__icon bi bi-card-list"></i><span
+                                        class="side-menu__label">الخيول</span><i
+                                        class="angle fs-6 fw-bold bi bi-chevron-left"></i></a>
+                                <ul class="slide-menu">
+                                    <li class="side-menu-label1"><a href="javascript:void(0)">الخيول</a></li>
+                                    <li><a href="#" class="slide-item">عرض كافة الخيول</a></li>
+                                    <li><a href="#" class="slide-item">إضافة خيل جديد</a></li>
+                                </ul>
+                            </li>
+                            <li class="slide">
+                                <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i
+                                        class="side-menu__icon bi bi-layout-text-window"></i><span
+                                        class="side-menu__label">العينات والنتائج</span><i
+                                        class="angle fs-6 fw-bold bi bi-chevron-left"></i></a>
+                                <ul class="slide-menu">
+                                    <li class="side-menu-label1"><a href="javascript:void(0)">العينات والنتائج</a></li>
+                                    <li><a href="#" class="slide-item">عرض  كافة العينات</a></li>
+                                    <li><a href="#" class="slide-item">عرض نتائج التحاليل </a></li>
+                                </ul>
+                            </li>
+                            <li class="slide">
+                                <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i
+                                        class="side-menu__icon bi bi-cash-coin"></i><span
+                                        class="side-menu__label">فواتير العملاء</span><i
+                                        class="angle fs-6 fw-bold bi bi-chevron-left"></i></a>
+                                <ul class="slide-menu">
+                                    <li class="side-menu-label1"><a href="javascript:void(0)">عرض كافة الفواتير</a></li>
+                                    <li><a href="#" class="slide-item">عرض  كافة الفواتير</a></li>
+                                    <li><a href="#" class="slide-item">تسديد فاتورة </a></li>
+                                    <li><a href="#" class="slide-item">كابونات الخصم </a></li>
+                                </ul>
+                            </li>
+                            <li class="slide">
+                                <a class="side-menu__item has-link" data-bs-toggle="slide" href="pages/إدارة_العملاء.html"><i
+                                        class="side-menu__icon bi bi-headset"></i><span
+                                        class="side-menu__label">تذاكر الدعم الفني</span></a>
+                            </li>
+                            <li class="slide">
+                                <a class="side-menu__item has-link" data-bs-toggle="slide" href="pages/إدارة_الموظفين.html"><i
+                                        class="side-menu__icon bi bi-sliders"></i><span
+                                        class="side-menu__label">إعدادت النظام</span></a>
+                            </li>
+                            <li class="slide">
+                                <a class="side-menu__item has-link" data-bs-toggle="slide" href="pages/index.html"><i
+                                        class="side-menu__icon fw-bold bi bi-box-arrow-right" style="color: var(--bs-danger) !important;"></i><span
+                                        class="side-menu__label fw-bold" style="color: var(--bs-danger) !important;">تسجيل الخروج</span></a>
+                            </li>
+                        </ul>
+                        <div class="slide-right" id="slide-right"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191"
+                                width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z" />
+                            </svg></div>
+                    </div>
+                </div>
+                <!--/APP-SIDEBAR-->
+            </div> 
+            <!--/app-sidebar-->
+
+
+            <!--app-content open-->
+            <div class="main-content app-content" style="margin-top: 100px;">
+                <div class="side-app">
+
+                    <!-- CONTAINER -->
+                    <div class="main-container container-fluid">
+                        <!-- PAGE-HEADER -->
+                        <div class="page-header">
+                            <h1 class="page-title"><i class="bi bi-columns-gap text-primary"></i> لوحة تحكم موظف الاستقبال والمختبر</h1>
+                            <div>
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="../index.html">الصفحة الرئيسية</a></li>
+                                    <li class="breadcrumb-item active"><a href="javascript:void(0)">نقاط البيع</a></li>
+                                </ol>
+                            </div>
+                        </div>
+                        <!-- PAGE-HEADER END -->
+
+                        <!--التاريخ والوقت & أزرار-->
+                        <div class="alert alert-info" role="alert">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="alert-inner--icon"><i class="bi bi-calendar-week"></i></span>
+                                    <span class="alert-inner--text">17/5/2023 <strong class="text-blue">05:20 PM</strong></span>        
+                                </div>
+                                <div>
+                                    <ul class="nav justify-content-end">
+                                        <li class="nav-item mx-3">
+                                            <a href="add_client.html">
+                                                <span  class="btn btn-primary rounded-pill my-4"><i class="las la-user-plus fs-4"></i></span>
+                                                <span class="fs-6 fw-bold mx-2">اضافة عميل جديد</span>      
+                                            </a>
+                                        </li>
+                                        <li class="nav-item mx-3">
+                                            <a href="add_horse.html">
+                                                <span  class="btn btn-primary rounded-pill my-4"><i class="las la-plus-square fs-4"></i></span>
+                                                <span class="fs-6 fw-bold mx-2">اضافة خيل جديد</span>    
+                                            </a>
+                                        </li>
+                                        <li class="nav-item mx-3">
+                                            <a data-bs-toggle="modal" data-bs-target="#client_modal">
+                                                <span  class="btn btn-primary rounded-pill my-4"><i class="las la-hat-cowboy-side fs-4"></i></span>
+                                                <span class="fs-6 fw-bold mx-2">العملاء</span>    
+                                            </a>
+                                        </li>
+                                        <li class="nav-item mx-3">
+                                            <a data-bs-toggle="modal" data-bs-target="#horse_modal">
+                                                <span  class="btn btn-primary rounded-pill my-4" aria-current="page" href="add_horse.html"><i class="las la-horse-head fs-4"></i></span>
+                                                <span class="fs-6 fw-bold mx-2">الخيول</span>  
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/التاريخ والوقت & أزرار-->
+
+                        <!-- جدول العينات المدرجة -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card p-0 border border-1 rounded-4">
+                                    <div class="card-header bg-info">
+                                        <h3 class="card-title text-white mb-0 fs-5"><i class="bi bi-card-list text-primary fs-3"></i> شاشة عرض العينات المدرجة</h3>
+                                    </div>
+                                    <div class="card-body pt-4">
+                                        <p class="text-end">يتم اضافة تفاصيل العينات واعتماد الطلب من خلال النموذج أسفل </p>
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered table-hover text-nowrap mb-0">
+                                                <thead class="border-top">
+                                                    <tr>
+                                                        <th class="bg-transparent border-bottom-0 text-info fs-6 fw-bold" style="width: 5%;">NO</th>
+                                                        <th class="bg-transparent border-bottom-0 text-info fs-6 fw-bold">اسم الخيل</th>
+                                                        <th class="bg-transparent border-bottom-0 text-info fs-6 fw-bold">نوع العميل</th>
+                                                        <th class="bg-transparent border-bottom-0 text-info fs-6 fw-bold">اسم العميل</th> 
+                                                        <th class="bg-transparent border-bottom-0 text-info fs-6 fw-bold">نوع التحليل</th>                                                                                
+                                                        <th class="bg-transparent border-bottom-0 text-info fs-6 fw-bold">حالة العينة</th>
+                                                        <th class="bg-transparent border-bottom-0 text-info fs-6 fw-bold">التفاصيل</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="border-bottom">
+                                                    <tr>
+                                                        <th class="bg-transparent border-bottom-0" style="width: 5%;">01</th>
+                                                        <th class="bg-transparent border-bottom-0">خيل البارق</th>
+                                                        <th class="bg-transparent border-bottom-0">عميل فردي</th>
+                                                        <th class="bg-transparent border-bottom-0">محمد النواجحة</th> 
+                                                        <th class="bg-transparent border-bottom-0">
+                                                            <span class="tag tag-azure">تحليل شامل</span>
+                                                            <span class="tag tag-azure">تحليل ملاريا</span>
+                                                        </th>                                                                                
+                                                        <th class="bg-transparent border-bottom-0">
+                                                            <span class="badge bg-success-transparent rounded-pill text-success p-2 px-3">مستلمة</span>
+                                                        </th>
+                                                        <th class="bg-transparent border-bottom-0">
+                                                            <a href="" class="btn btn-icon  btn-success"><i class="bi bi-arrows-fullscreen"></i></a>
+                                                            <a href="" class="btn btn-icon  btn-danger"><i class="bi bi-trash3"></i></a>
+                                                        </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="bg-transparent border-bottom-0" style="width: 5%;">02</th>
+                                                        <th class="bg-transparent border-bottom-0">خيل البارق</th>
+                                                        <th class="bg-transparent border-bottom-0">عميل فردي</th>
+                                                        <th class="bg-transparent border-bottom-0">محمد النواجحة</th> 
+                                                        <th class="bg-transparent border-bottom-0">
+                                                            <span class="tag tag-azure">تحليل شامل</span>
+                                                            <span class="tag tag-azure">تحليل ملاريا</span>
+                                                        </th>                                                                                
+                                                        <th class="bg-transparent border-bottom-0">
+                                                            <span class="badge bg-warning-transparent rounded-pill text-warning p-2 px-3">غير مستلمة</span>
+                                                        </th>
+                                                        <th class="bg-transparent border-bottom-0">
+                                                            <a href="" class="btn btn-icon  btn-success"><i class="bi bi-arrows-fullscreen"></i></a>
+                                                            <a href="" class="btn btn-icon  btn-danger"><i class="bi bi-trash3"></i></a>
+                                                        </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="bg-transparent border-bottom-0" style="width: 5%;">02</th>
+                                                        <th class="bg-transparent border-bottom-0">خيل البارق</th>
+                                                        <th class="bg-transparent border-bottom-0">عميل فردي</th>
+                                                        <th class="bg-transparent border-bottom-0">محمد النواجحة</th> 
+                                                        <th class="bg-transparent border-bottom-0">
+                                                            <span class="tag tag-azure">تحليل شامل</span>
+                                                            <span class="tag tag-azure">تحليل ملاريا</span>
+                                                        </th>                                                                                
+                                                        <th class="bg-transparent border-bottom-0">
+                                                            <span class="badge bg-info-transparent rounded-pill text-info p-2 px-3">هناك غير مستلمة</span>
+                                                        </th>
+                                                        <th class="bg-transparent border-bottom-0">
+                                                            <a href="" class="btn btn-icon  btn-success"><i class="bi bi-arrows-fullscreen"></i></a>
+                                                            <a href="" class="btn btn-icon  btn-danger"><i class="bi bi-trash3"></i></a>
+                                                        </th>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /جدول العينات المدرجة -->
+
+                        <!-- اختيار العميل والخيل -->
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <div class="card p-0">
+                                    <div class="card-body">
+                                        <h5><i class="bi bi-check-circle text-info"></i> اختيار عميل مدرج في النظام</h5>
+                                        <div class="row justify-content-start align-items-center"> 
+                                            <div class="col-12 text-start mb-4">
+                                              <label for="form-label" class="text-info fs-6">يرجى تحديد طريقة البحث</label>
+                                              <select id="select-clients-pos" class="form-select" placeholder="اختيار طريقة البحث">                                                
+                                                <option value="0" selected>اختيار طريقة البحث</option>
+                                                <option value="1">اسم العميل</option>
+                                                <option value="2">رقم جوال العميل</option>
+                                                <option value="3">رقم ملف العميل</option>
+                                                <option value="4"> رقم ملف الخيل</option>
+                                                <option value="5">نوع صلاحيات الحساب </option>
+                                              </select>
+                                            </div>
+                                        </div>                                   
+                                    </div>
+                                </div>                
+                            </div>
+                            <div class="col-12 col-md-8">
+                                <!---->
+                                <div class="card p-0" id="client_name">
+                                    <div class="card-header bg-info">
+                                        <h3 class="card-title text-white mb-0 fs-6"> البحث عن طريق اسم العميل</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table id="autofill-table_client_name" class="table table-bordered text-nowrap mb-0">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col" class="text-info">#</th>
+                                                        <th scope="col" class="text-info">اسم العميل</th>
+                                                        <th scope="col" class="text-info">الخيول</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">01</th>
+                                                        <th>محمد النواجحة</th>
+                                                        <th>
+                                                            <button type="button" class="btn btn-sm btn-info" data-bs-toggle="modal" data-bs-target="#all_horse_Individual_client">
+                                                                <i class="las la-horse-head"></i>
+                                                            </button>
+                                                        </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">01</th>
+                                                        <th>محمد نور</th>
+                                                        <th>
+                                                            <button type="button" class="btn btn-sm btn-info" data-bs-toggle="modal" data-bs-target="#all_horse_OW_stable">
+                                                                <i class="las la-horse-head"></i>
+                                                            </button>
+                                                        </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">01</th>
+                                                        <th>محمد الحربي</th>
+                                                        <th>
+                                                            <button type="button" class="btn btn-sm btn-info" data-bs-toggle="modal" data-bs-target="#all_horse_trainer_client">
+                                                                <i class="las la-horse-head"></i>
+                                                            </button>
+                                                        </th>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!---->
+
+                                <!---->
+                                <div class="card p-0" id="client_tel">
+                                    <div class="card-header bg-info">
+                                        <h3 class="card-title text-white mb-0 fs-6"> البحث عن طريق رقم جوال العميل</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table id="autofill-table_client_tel" class="table table-bordered text-nowrap mb-0">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col" class="text-info">#</th>
+                                                        <th scope="col" class="text-info">جوال العميل</th>
+                                                        <th scope="col" class="text-info">اسم العميل</th>
+                                                        <th scope="col" class="text-info">الخيول</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">01</th>
+                                                        <th>0599459397</th>
+                                                        <th>محمد النواجحة</th>
+                                                        <th>
+                                                            <button type="button" class="btn btn-sm btn-info" data-bs-toggle="modal" data-bs-target="#all_horse_Individual_client">
+                                                                <i class="las la-horse-head"></i>
+                                                            </button>
+                                                        </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">01</th>
+                                                        <th>0599459397</th>
+                                                        <th>محمد نور</th>
+                                                        <th>
+                                                            <button type="button" class="btn btn-sm btn-info" data-bs-toggle="modal" data-bs-target="#all_horse_OW_stable">
+                                                                <i class="las la-horse-head"></i>
+                                                            </button>
+                                                        </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">01</th>
+                                                        <th>0599459397</th>
+                                                        <th>محمد الحربي</th>
+                                                        <th>
+                                                            <button type="button" class="btn btn-sm btn-info" data-bs-toggle="modal" data-bs-target="#all_horse_trainer_client">
+                                                                <i class="las la-horse-head"></i>
+                                                            </button>
+                                                        </th>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!---->
+
+                                <!---->
+                                <div class="card p-0" id="client_no">
+                                    <div class="card-header bg-info">
+                                        <h3 class="card-title text-white mb-0 fs-6"> البحث عن طريق رقم ملف العميل</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table id="autofill-table_client_no" class="table table-bordered text-nowrap mb-0">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col" class="text-info">#</th>
+                                                        <th scope="col" class="text-info">رقم ملف العميل</th>
+                                                        <th scope="col" class="text-info">اسم العميل</th>
+                                                        <th scope="col" class="text-info">الخيول</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">01</th>
+                                                        <th>52245</th>
+                                                        <th>محمد النواجحة</th>
+                                                        <th>
+                                                            <button type="button" class="btn btn-sm btn-info" data-bs-toggle="modal" data-bs-target="#all_horse_Individual_client">
+                                                                <i class="las la-horse-head"></i>
+                                                            </button>
+                                                        </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">01</th>
+                                                        <th>88485</th>
+                                                        <th>محمد نور</th>
+                                                        <th>
+                                                            <button type="button" class="btn btn-sm btn-info" data-bs-toggle="modal" data-bs-target="#all_horse_OW_stable">
+                                                                <i class="las la-horse-head"></i>
+                                                            </button>
+                                                        </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">01</th>
+                                                        <th>14555</th>
+                                                        <th>محمد الحربي</th>
+                                                        <th>
+                                                            <button type="button" class="btn btn-sm btn-info" data-bs-toggle="modal" data-bs-target="#all_horse_trainer_client">
+                                                                <i class="las la-horse-head"></i>
+                                                            </button>
+                                                        </th>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!---->
+
+                                <!---->
+                                <div class="card p-0" id="horse_no">
+                                    <div class="card-header bg-info">
+                                        <h3 class="card-title text-white mb-0 fs-6"> البحث عن طريق رقم ملف الخيل</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table id="autofill-table_horse_no" class="table table-bordered text-nowrap mb-0">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col" class="text-info">#</th>
+                                                        <th scope="col" class="text-info">رقم ملف الحصان</th>
+                                                        <th scope="col" class="text-info">اسم العميل</th>
+                                                        <th scope="col" class="text-info">تفاصيل</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">01</th>
+                                                        <th>52245</th>
+                                                        <th>محمد النواجحة</th>
+                                                        <th>
+                                                            <button type="button" class="btn btn-sm btn-info" data-bs-toggle="modal" data-bs-target="#all_horse_Individual_client">
+                                                                <i class="las la-horse-head"></i>
+                                                            </button>
+                                                        </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">01</th>
+                                                        <th>88485</th>
+                                                        <th>محمد نور</th>
+                                                        <th>
+                                                            <button type="button" class="btn btn-sm btn-info" data-bs-toggle="modal" data-bs-target="#all_horse_OW_stable">
+                                                                <i class="las la-horse-head"></i>
+                                                            </button>
+                                                        </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">01</th>
+                                                        <th>14555</th>
+                                                        <th>محمد الحربي</th>
+                                                        <th>
+                                                            <button type="button" class="btn btn-sm btn-info" data-bs-toggle="modal" data-bs-target="#all_horse_trainer_client">
+                                                                <i class="las la-horse-head"></i>
+                                                            </button>
+                                                        </th>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!----> 
+                                
+                                <!---->
+                                <div class="card p-0" id="chlint_access">
+                                    <div class="card-header bg-info">
+                                        <h3 class="card-title text-white mb-0 fs-6"> البحث عن طريق عن نوع صلاحيات الحساب</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table id="autofill-table_chlint_access" class="table table-bordered text-nowrap mb-0">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col" class="text-info">#</th>
+                                                        <th scope="col" class="text-info">نوع العميل</th>
+                                                        <th scope="col" class="text-info">اسم العميل</th>
+                                                        <th scope="col" class="text-info">تفاصيل</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">01</th>
+                                                        <th>عميل فردي</th>
+                                                        <th>محمد النواجحة</th>
+                                                        <th>
+                                                            <button type="button" class="btn btn-sm btn-info" data-bs-toggle="modal" data-bs-target="#all_horse_Individual_client">
+                                                                <i class="las la-horse-head"></i>
+                                                            </button>
+                                                        </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">01</th>
+                                                        <th>مالك اسطبل</th>
+                                                        <th>محمد نور</th>
+                                                        <th>
+                                                            <button type="button" class="btn btn-sm btn-info" data-bs-toggle="modal" data-bs-target="#all_horse_OW_stable">
+                                                                <i class="las la-horse-head"></i>
+                                                            </button>
+                                                        </th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">01</th>
+                                                        <th>مدرب</th>
+                                                        <th>محمد الحربي</th>
+                                                        <th>
+                                                            <button type="button" class="btn btn-sm btn-info" data-bs-toggle="modal" data-bs-target="#all_horse_trainer_client">
+                                                                <i class="las la-horse-head"></i>
+                                                            </button>
+                                                        </th>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!---->
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="card p-0">
+                                    <div class="card-body">
+                                        <h5><i class="bi bi-check-circle text-info"></i> اختيار نوع التحاليل</h5>
+                                        <div class="row justify-content-start align-items-center"> 
+                                            <div class="col-12 text-start mb-4">
+                                              <label for="form-label" class="text-info fs-6">يرجى اختيار نوع التحاليل</label>
+                                              <select class="form-select" placeholder="اختيار نوع التحاليل">                                                
+                                                <option value="0" selected>اختيار نوع التحاليل</option>
+                                                <option value="1">ملارايا</option>
+                                                <option value="2">تحليل شامل</option>
+                                                <option value="3">ملارايا</option>
+                                                <option value="4">تحليل شامل</option>
+                                                <option value="5">ملارايا</option>
+                                                <option value="6">تحليل شامل</option>                                              
+                                            </select>
+                                            <div>
+                                                <label for="form-label" class="text-info fs-6 mt-4">هل تم استلام العينة؟</label><br>
+                                                <label class="text-primary fs-7" for="aa1"><input type="radio" name="aa" id="aa1">نعم، تم استلام العينة</label><br>
+                                                <label class="text-primary fs-7" for="aa2"><input type="radio" name="aa" id="aa2">لا ، لم يتم استلام العينة</label><br> 
+                                                <label class="text-primary fs-7" for="aa3"><input type="radio" name="aa" id="aa3">الحصول على عينة للتحليل سابق</label><br> 
+                                            </div>
+                                            <button class="btn btn-info my-4" type="button">إدراج</button>
+                                            </div>
+                                        </div>                                  
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="card p-0">
+                                    <div class="card-body">
+                                        <h5><i class="bi bi-check-circle text-info"></i> الكبونات والخصم</h5>
+                                        <div class="row justify-content-start align-items-center"> 
+                                            <div class="col-12 text-start mb-4">
+                                              <label for="form-label" class="text-info fs-6">كابون مدرج في النظام / إدخال يدوي</label>
+                                              <select id="select-discounts" class="form-select" placeholder="اختيار نوع كابون الخصم">                                                
+                                                <option value="0" selected>اختر </option>
+                                                <option value="1">كابون مدرج في النظام</option>
+                                                <option value="2">إدخال خصم يدوي بالنسمة المئوية</option>
+                                                <option value="3">إدخال خصم يدوي- مبلغ ريال</option>
+                                            </select>
+                                            </div>
+                                            <div class="col-12 text-start mb-4" id="discounts-list">
+                                                <label for="form-label" class="text-info fs-6">الكبونات المدرجة في النظام</label>
+                                                <select id="select-discounts" class="form-select" placeholder="اختيار نوع كابون الخصم">                                                
+                                                  <option value="0" selected>اختر </option>
+                                                  <option value="1">كابون1</option>
+                                                  <option value="1">كابون1</option>
+                                                  <option value="1">كابون1</option>
+                                              </select>
+                                              <button class="btn btn-info my-4" type="button">اضافة</button>
+                                              </div>
+
+                                              <div class="col-12 text-start mb-4" id="discounts-perc">
+                                                <label for="form-label" class="text-info fs-6">إدخال خصم يدوي بالنسمة المئوية</label>
+                                                <span class="d-flex align-items-center"><input type="number" class="form-control mx-2" placeholder="يرجى إدخال الخصم بالنسبة المئوية"> %</span>
+                                              <button class="btn btn-info my-4" type="button">اضافة</button>
+                                              </div>
+                                              <div class="col-12 text-start mb-4" id="discounts-SAR">
+                                                <label for="form-label" class="text-info fs-6">إدخال خصم يدوي مبلغ بالريال السعودي</label>
+                                                <span class="d-flex align-items-center"><input type="number" class="form-control mx-2" placeholder="يرجى إدخال الخصم بالريال السعودي"> SAR</span>
+                                              <button class="btn btn-info my-4" type="button">اضافة</button>
+                                              </div>
+                                        </div>                                   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /row-1 -->
+
+                        <div class="card  mb-9">
+                            <div class="card-body">
+                                <div class="row align-items-end justify-content-around">
+                                    <div class="col-5">
+                                        <div class="mt-4">
+                                            <div class="d-flex justify-content-start">
+                                              <p>اجمالي المبلغ لدفع</p>
+                                              <p class="productNumbe mx-3">6</p>
+                                            </div>
+                                            <div class="d-flex justify-content-start">
+                                              <p>الخصم / الكبونات </p>
+                                              <p class="discount mx-3">10</p>
+                                            </div>
+                                            <div class="d-flex justify-content-start">
+                                              <p> الاجمالي مع الخصم</p>
+                                              <p class="productPrice mx-3">90</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="d-flex justify-content-end">
+                                            <a href="#" class="btn btn-sm btn-success mx-2" data-bs-toggle="modal" data-bs-target="#pay"> اعتماد نهائي</a>
+                                            <a href="#" class="btn btn-sm btn-primary mx-2" data-bs-toggle="modal" data-bs-target="#طباعة_الطلب"> طباعة الطلب</a>
+                                            <a href="#" class="btn btn-sm btn-info mx-2" data-bs-toggle="modal" data-bs-target="#طباعة_فاتورة"> طباعة الفاتورة</a>
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#الطلبات_المفتوحة" class="btn btn-sm btn-warning mx-2"> مسودة</a>
+                                            <a href=" " class="btn btn-sm btn-danger mx-2">إلغاء الطلب</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- CONTAINER END -->
+                </div>
+            </div>
+            <!--app-content close-->        
+        </div>
+
+                <!-- FOOTER -->
+                <footer class="footer">
+                    <div class="container">
+                        <div class="row align-items-center flex-row-reverse">
+                            <div class="col-md-12 col-sm-12 text-center">
+                                <h6 class="text-primary">جميع الحقوق محفوظة <a class="text-info link-hover" href="#">متخبر المتميز</a></h6>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- FOOTER END -->
+    </div>
+    <!-- /page -->
+
+    <!--موديل الأزرار الأعلى-->
+
+        <!--موديل العملاء-->
+        <div class="modal fade" id="client_modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">اختيار خيل/حصان</h5>
+                        <button class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="card-body text-info">
+                            <div class="d-flex justify-content-between my-4">
+                                <h3 class="card-title text-info mb-4 fw-bold fs-5">جميع خيول العميل المدرجة في النظام</h3>
+                                <a class="btn btn-info" >اضافة خيل جديد</a>
+                            </div>
+                            <div class="">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered table-hover text-nowrap mb-0">
+                                        <thead class="border-top">
+                                            <tr class="text-center">
+                                                <th class="bg-transparent border-bottom-0 text-info fs-6 fw-bold" style="width: 5%;">NO</th>
+                                                <th class="bg-transparent border-bottom-0 text-info fs-6 fw-bold">صورة الخيل</th>
+                                                <th class="bg-transparent border-bottom-0 text-info fs-6 fw-bold">اسم الخيل</th>
+                                                <th class="bg-transparent border-bottom-0 text-info fs-6 fw-bold">نوع العميل</th>
+                                                <th class="bg-transparent border-bottom-0 text-info fs-6 fw-bold">اسم العميل</th> 
+                                                <th class="bg-transparent border-bottom-0 text-info fs-6 fw-bold" style="width: 5%;">تفاصيل الخيل</th>
+                                                <th class="bg-transparent border-bottom-0 text-info fs-6 fw-bold" style="width: 5%;">تسجيل عينة جديدة</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="border-bottom">
+                                            <tr class="text-center">
+                                                <th class="bg-transparent border-bottom-0" style="width: 5%;">01</th>
+                                                <th class="bg-transparent border-bottom-0">
+                                                    <img src="../assets/images/horse.jpeg" alt="profile-user" class="profile-user brround cover-image" width="40px" height="40px">
+                                                </th>
+                                                <th class="bg-transparent border-bottom-0">خيل البارق</th>
+                                                <th class="bg-transparent border-bottom-0">عميل فردي</th>
+                                                <th class="bg-transparent border-bottom-0">محمد النواجحة</th> 
+                                                <th class="bg-transparent border-bottom-0" style="width: 5%;">
+                                                    <a href="" class="btn btn-icon  btn-success"><i class="bi bi-arrows-fullscreen"></i></a>
+                                                </th>
+                                                <th class="bg-transparent border-bottom-0" style="width: 5%;">
+                                                    <a href="" class="btn btn-icon  btn-info"><i class="bi bi-plus-circle"></i></a>
+                                                </th>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <th class="bg-transparent border-bottom-0" style="width: 5%;">01</th>
+                                                <th class="bg-transparent border-bottom-0">
+                                                    <img src="../assets/images/horse.jpeg" alt="profile-user" class="profile-user brround cover-image" width="40px" height="40px">
+                                                </th>
+                                                <th class="bg-transparent border-bottom-0">خيل البارق</th>
+                                                <th class="bg-transparent border-bottom-0">عميل فردي</th>
+                                                <th class="bg-transparent border-bottom-0">محمد النواجحة</th> 
+                                                <th class="bg-transparent border-bottom-0" style="width: 5%;">
+                                                    <a href="" class="btn btn-icon  btn-success"><i class="bi bi-arrows-fullscreen"></i></a>
+                                                </th>
+                                                <th class="bg-transparent border-bottom-0" style="width: 5%;">
+                                                    <a href="" class="btn btn-icon  btn-info"><i class="bi bi-plus-circle"></i></a>
+                                                </th>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <th class="bg-transparent border-bottom-0" style="width: 5%;">01</th>
+                                                <th class="bg-transparent border-bottom-0">
+                                                    <img src="../assets/images/horse.jpeg" alt="profile-user" class="profile-user brround cover-image" width="40px" height="40px">
+                                                </th>
+                                                <th class="bg-transparent border-bottom-0">خيل البارق</th>
+                                                <th class="bg-transparent border-bottom-0">عميل فردي</th>
+                                                <th class="bg-transparent border-bottom-0">محمد النواجحة</th> 
+                                                <th class="bg-transparent border-bottom-0" style="width: 5%;">
+                                                    <a href="" class="btn btn-icon  btn-success"><i class="bi bi-arrows-fullscreen"></i></a>
+                                                </th>
+                                                <th class="bg-transparent border-bottom-0" style="width: 5%;">
+                                                    <a href="" class="btn btn-icon  btn-info"><i class="bi bi-plus-circle"></i></a>
+                                                </th>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>                
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/ موديل العملاء-->
+
+
+    <!--/موديل الأزرار الأعلى-->
+
+    <div class="modal fade" id="all_horse_Individual_client" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">اختيار خيل/حصان</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card-body text-info">
+                        <div class="d-flex justify-content-between my-4">
+                            <h3 class="card-title text-info mb-4 fw-bold fs-5">جميع خيول العميل المدرجة في النظام</h3>
+                            <a class="btn btn-info" >اضافة خيل جديد</a>
+                        </div>
+                        <div class="">
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-hover text-nowrap mb-0">
+                                    <thead class="border-top">
+                                        <tr class="text-center">
+                                            <th class="bg-transparent border-bottom-0 text-info fs-6 fw-bold" style="width: 5%;">NO</th>
+                                            <th class="bg-transparent border-bottom-0 text-info fs-6 fw-bold">صورة الخيل</th>
+                                            <th class="bg-transparent border-bottom-0 text-info fs-6 fw-bold">اسم الخيل</th>
+                                            <th class="bg-transparent border-bottom-0 text-info fs-6 fw-bold">نوع العميل</th>
+                                            <th class="bg-transparent border-bottom-0 text-info fs-6 fw-bold">اسم العميل</th> 
+                                            <th class="bg-transparent border-bottom-0 text-info fs-6 fw-bold" style="width: 5%;">تفاصيل الخيل</th>
+                                            <th class="bg-transparent border-bottom-0 text-info fs-6 fw-bold" style="width: 5%;">تسجيل عينة جديدة</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="border-bottom">
+                                        <tr class="text-center">
+                                            <th class="bg-transparent border-bottom-0" style="width: 5%;">01</th>
+                                            <th class="bg-transparent border-bottom-0">
+                                                <img src="../assets/images/horse.jpeg" alt="profile-user" class="profile-user brround cover-image" width="40px" height="40px">
+                                            </th>
+                                            <th class="bg-transparent border-bottom-0">خيل البارق</th>
+                                            <th class="bg-transparent border-bottom-0">عميل فردي</th>
+                                            <th class="bg-transparent border-bottom-0">محمد النواجحة</th> 
+                                            <th class="bg-transparent border-bottom-0" style="width: 5%;">
+                                                <a href="" class="btn btn-icon  btn-success"><i class="bi bi-arrows-fullscreen"></i></a>
+                                            </th>
+                                            <th class="bg-transparent border-bottom-0" style="width: 5%;">
+                                                <a href="" class="btn btn-icon  btn-info"><i class="bi bi-plus-circle"></i></a>
+                                            </th>
+                                        </tr>
+                                        <tr class="text-center">
+                                            <th class="bg-transparent border-bottom-0" style="width: 5%;">01</th>
+                                            <th class="bg-transparent border-bottom-0">
+                                                <img src="../assets/images/horse.jpeg" alt="profile-user" class="profile-user brround cover-image" width="40px" height="40px">
+                                            </th>
+                                            <th class="bg-transparent border-bottom-0">خيل البارق</th>
+                                            <th class="bg-transparent border-bottom-0">عميل فردي</th>
+                                            <th class="bg-transparent border-bottom-0">محمد النواجحة</th> 
+                                            <th class="bg-transparent border-bottom-0" style="width: 5%;">
+                                                <a href="" class="btn btn-icon  btn-success"><i class="bi bi-arrows-fullscreen"></i></a>
+                                            </th>
+                                            <th class="bg-transparent border-bottom-0" style="width: 5%;">
+                                                <a href="" class="btn btn-icon  btn-info"><i class="bi bi-plus-circle"></i></a>
+                                            </th>
+                                        </tr>
+                                        <tr class="text-center">
+                                            <th class="bg-transparent border-bottom-0" style="width: 5%;">01</th>
+                                            <th class="bg-transparent border-bottom-0">
+                                                <img src="../assets/images/horse.jpeg" alt="profile-user" class="profile-user brround cover-image" width="40px" height="40px">
+                                            </th>
+                                            <th class="bg-transparent border-bottom-0">خيل البارق</th>
+                                            <th class="bg-transparent border-bottom-0">عميل فردي</th>
+                                            <th class="bg-transparent border-bottom-0">محمد النواجحة</th> 
+                                            <th class="bg-transparent border-bottom-0" style="width: 5%;">
+                                                <a href="" class="btn btn-icon  btn-success"><i class="bi bi-arrows-fullscreen"></i></a>
+                                            </th>
+                                            <th class="bg-transparent border-bottom-0" style="width: 5%;">
+                                                <a href="" class="btn btn-icon  btn-info"><i class="bi bi-plus-circle"></i></a>
+                                            </th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="all_horse_OW_stable" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">اختيار خيل/حصان</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card-body text-info">
+                        <div class="d-flex justify-content-between my-4">
+                            <h3 class="card-title text-info mb-4 fw-bold fs-5">جميع خيول العميل المدرجة في النظام</h3>
+                            <a class="btn btn-info" >اضافة خيل جديد</a>
+                        </div>
+                        <div class="">
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-hover text-nowrap mb-0">
+                                    <thead class="border-top">
+                                        <tr class="text-center">
+                                            <th class="bg-transparent border-bottom-0 text-info fs-6 fw-bold" style="width: 5%;">NO</th>
+                                            <th class="bg-transparent border-bottom-0 text-info fs-6 fw-bold">صورة الخيل</th>
+                                            <th class="bg-transparent border-bottom-0 text-info fs-6 fw-bold">اسم الخيل</th>
+                                            <th class="bg-transparent border-bottom-0 text-info fs-6 fw-bold">نوع العميل</th>
+                                            <th class="bg-transparent border-bottom-0 text-info fs-6 fw-bold">اسم مالك الاسطبل</th> 
+                                            <th class="bg-transparent border-bottom-0 text-info fs-6 fw-bold">اسم المدرب</th> 
+                                            <th class="bg-transparent border-bottom-0 text-info fs-6 fw-bold" style="width: 5%;">تفاصيل الخيل</th>
+                                            <th class="bg-transparent border-bottom-0 text-info fs-6 fw-bold" style="width: 5%;">تسجيل عينة جديدة</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="border-bottom">
+                                        <tr class="text-center">
+                                            <th class="bg-transparent border-bottom-0" style="width: 5%;">01</th>
+                                            <th class="bg-transparent border-bottom-0">
+                                                <img src="../assets/images/horse.jpeg" alt="profile-user" class="profile-user brround cover-image" width="40px" height="40px">
+                                            </th>
+                                            <th class="bg-transparent border-bottom-0">خيل البارق</th>
+                                            <th class="bg-transparent border-bottom-0">مالك اسطبل</th>
+                                            <th class="bg-transparent border-bottom-0">محمد النواجحة</th> 
+                                            <th class="bg-transparent border-bottom-0">محمد نور</th> 
+                                            <th class="bg-transparent border-bottom-0" style="width: 5%;">
+                                                <a href="" class="btn btn-icon  btn-success"><i class="bi bi-arrows-fullscreen"></i></a>
+                                            </th>
+                                            <th class="bg-transparent border-bottom-0" style="width: 5%;">
+                                                <a href="" class="btn btn-icon  btn-info"><i class="bi bi-plus-circle"></i></a>
+                                            </th>
+                                        </tr>
+                                        <tr class="text-center">
+                                            <th class="bg-transparent border-bottom-0" style="width: 5%;">01</th>
+                                            <th class="bg-transparent border-bottom-0">
+                                                <img src="../assets/images/horse.jpeg" alt="profile-user" class="profile-user brround cover-image" width="40px" height="40px">
+                                            </th>
+                                            <th class="bg-transparent border-bottom-0">خيل البارق</th>
+                                            <th class="bg-transparent border-bottom-0">مالك اسطبل</th>
+                                            <th class="bg-transparent border-bottom-0">محمد النواجحة</th> 
+                                            <th class="bg-transparent border-bottom-0">محمد نور</th> 
+                                            <th class="bg-transparent border-bottom-0" style="width: 5%;">
+                                                <a href="" class="btn btn-icon  btn-success"><i class="bi bi-arrows-fullscreen"></i></a>
+                                            </th>
+                                            <th class="bg-transparent border-bottom-0" style="width: 5%;">
+                                                <a href="" class="btn btn-icon  btn-info"><i class="bi bi-plus-circle"></i></a>
+                                            </th>
+                                        </tr>
+                                        <tr class="text-center">
+                                            <th class="bg-transparent border-bottom-0" style="width: 5%;">01</th>
+                                            <th class="bg-transparent border-bottom-0">
+                                                <img src="../assets/images/horse.jpeg" alt="profile-user" class="profile-user brround cover-image" width="40px" height="40px">
+                                            </th>
+                                            <th class="bg-transparent border-bottom-0">خيل البارق</th>
+                                            <th class="bg-transparent border-bottom-0">مالك اسطبل</th>
+                                            <th class="bg-transparent border-bottom-0">محمد النواجحة</th> 
+                                            <th class="bg-transparent border-bottom-0">محمد نور</th> 
+                                            <th class="bg-transparent border-bottom-0" style="width: 5%;">
+                                                <a href="" class="btn btn-icon  btn-success"><i class="bi bi-arrows-fullscreen"></i></a>
+                                            </th>
+                                            <th class="bg-transparent border-bottom-0" style="width: 5%;">
+                                                <a href="" class="btn btn-icon  btn-info"><i class="bi bi-plus-circle"></i></a>
+                                            </th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="all_horse_trainer_client" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">اختيار خيل/حصان</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card-body text-info">
+                        <div class="d-flex justify-content-between my-4">
+                            <h3 class="card-title text-info mb-4 fw-bold fs-5">جميع خيول العميل المدرجة في النظام</h3>
+                            <a class="btn btn-info" >اضافة خيل جديد</a>
+                        </div>
+                        <div class="">
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-hover text-nowrap mb-0">
+                                    <thead class="border-top">
+                                        <tr class="text-center">
+                                            <th class="bg-transparent border-bottom-0 text-info fs-6 fw-bold" style="width: 5%;">NO</th>
+                                            <th class="bg-transparent border-bottom-0 text-info fs-6 fw-bold">صورة الخيل</th>
+                                            <th class="bg-transparent border-bottom-0 text-info fs-6 fw-bold">اسم الخيل</th>
+                                            <th class="bg-transparent border-bottom-0 text-info fs-6 fw-bold">نوع العميل</th>
+                                            <th class="bg-transparent border-bottom-0 text-info fs-6 fw-bold">اسم مالك الاسطبل</th> 
+                                            <th class="bg-transparent border-bottom-0 text-info fs-6 fw-bold">اسم المدرب</th> 
+                                            <th class="bg-transparent border-bottom-0 text-info fs-6 fw-bold" style="width: 5%;">تفاصيل الخيل</th>
+                                            <th class="bg-transparent border-bottom-0 text-info fs-6 fw-bold" style="width: 5%;">تسجيل عينة جديدة</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="border-bottom">
+                                        <tr class="text-center">
+                                            <th class="bg-transparent border-bottom-0" style="width: 5%;">01</th>
+                                            <th class="bg-transparent border-bottom-0">
+                                                <img src="../assets/images/horse.jpeg" alt="profile-user" class="profile-user brround cover-image" width="40px" height="40px">
+                                            </th>
+                                            <th class="bg-transparent border-bottom-0">خيل البارق</th>
+                                            <th class="bg-transparent border-bottom-0">مدرب</th>
+                                            <th class="bg-transparent border-bottom-0">محمد النواجحة</th> 
+                                            <th class="bg-transparent border-bottom-0">محمد نور</th> 
+                                            <th class="bg-transparent border-bottom-0" style="width: 5%;">
+                                                <a href="" class="btn btn-icon  btn-success"><i class="bi bi-arrows-fullscreen"></i></a>
+                                            </th>
+                                            <th class="bg-transparent border-bottom-0" style="width: 5%;">
+                                                <a href="" class="btn btn-icon  btn-info"><i class="bi bi-plus-circle"></i></a>
+                                            </th>
+                                        </tr>
+                                        <tr class="text-center">
+                                            <th class="bg-transparent border-bottom-0" style="width: 5%;">01</th>
+                                            <th class="bg-transparent border-bottom-0">
+                                                <img src="../assets/images/horse.jpeg" alt="profile-user" class="profile-user brround cover-image" width="40px" height="40px">
+                                            </th>
+                                            <th class="bg-transparent border-bottom-0">خيل البارق</th>
+                                            <th class="bg-transparent border-bottom-0">مدرب</th>
+                                            <th class="bg-transparent border-bottom-0">محمد النواجحة</th> 
+                                            <th class="bg-transparent border-bottom-0">محمد نور</th> 
+                                            <th class="bg-transparent border-bottom-0" style="width: 5%;">
+                                                <a href="" class="btn btn-icon  btn-success"><i class="bi bi-arrows-fullscreen"></i></a>
+                                            </th>
+                                            <th class="bg-transparent border-bottom-0" style="width: 5%;">
+                                                <a href="" class="btn btn-icon  btn-info"><i class="bi bi-plus-circle"></i></a>
+                                            </th>
+                                        </tr>
+                                        <tr class="text-center">
+                                            <th class="bg-transparent border-bottom-0" style="width: 5%;">01</th>
+                                            <th class="bg-transparent border-bottom-0">
+                                                <img src="../assets/images/horse.jpeg" alt="profile-user" class="profile-user brround cover-image" width="40px" height="40px">
+                                            </th>
+                                            <th class="bg-transparent border-bottom-0">خيل البارق</th>
+                                            <th class="bg-transparent border-bottom-0">مدرب</th>
+                                            <th class="bg-transparent border-bottom-0">محمد النواجحة</th> 
+                                            <th class="bg-transparent border-bottom-0">محمد نور</th> 
+                                            <th class="bg-transparent border-bottom-0" style="width: 5%;">
+                                                <a href="" class="btn btn-icon  btn-success"><i class="bi bi-arrows-fullscreen"></i></a>
+                                            </th>
+                                            <th class="bg-transparent border-bottom-0" style="width: 5%;">
+                                                <a href="" class="btn btn-icon  btn-info"><i class="bi bi-plus-circle"></i></a>
+                                            </th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- bootstrap js -->
+    <script src="../assets/js/bootstrap.js"></script>
+    <!-- jquery js -->
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <!-- popper js -->
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/sticky.js"></script>
+    <!-- INTERNAL CHARTJS CHART JS-->
+    <script src="../assets/plugins/chart/chart.js"></script>
+    <!-- Perfect SCROLLBAR JS-->
+    <script src="../assets/plugins/p-scroll/perfect-scrollbar.js"></script>
+    <script src="../assets/plugins/p-scroll/pscroll.js"></script>
+    <script src="../assets/plugins/p-scroll/pscroll-1.js"></script>
+    <!-- sidemenu js -->
+    <script src="../assets/plugins/sidemenu/sidemenu.js"></script>
+    <!-- Color Theme js -->
+    <script src="../assets/js/themeColors.js"></script>
+    
+    <!-- INTERNAL Autofill-Table JS -->
+    <script src="../assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+    <script src="../assets/plugins/datatable/js/dataTables.bootstrap5.js"></script>
+    <script src="../assets/plugins/datatable/js/dataTables.buttons.min.js"></script>
+    <script src="../assets/plugins/datatable/js/buttons.bootstrap5.min.js"></script>
+    <script src="../assets/plugins/extension-datatable/autofill/dataTables.autoFill.min.js"></script>
+    <script src="../assets/plugins/extension-datatable/autofill/autoFill.bootstrap5.min.js"></script>
+    <script src="../assets/plugins/extension-datatable/keytable/dataTables.keyTable.min.js"></script>
+    <script src="../assets/js/autofill-table.js"></script>
+    <!-- coustom js -->
+    <script src="../assets/js/coustom.js"></script>
+</body>
+</html>
